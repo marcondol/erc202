@@ -34,6 +34,12 @@ module.exports = {
       chainId: 137,
       accounts: [process.env.DEV_PRIVATE_KEY],
     },
+    bscTestnet: {
+      url: "https://data-seed-prebsc-1-s1.binance.org",
+      chainIds: 97,
+      accounts: [process.env.DEV_PRIVATE_KEY]
+    }
+
   },
   etherscan: {
     apiKey: {
@@ -47,6 +53,7 @@ module.exports = {
       // polygon
       polygon: process.env.POLYGONSCAN_API_KEY,
       polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+      bscTestnet: process.env.BINANCE_API_KEY,
     },
   },
   dependencyCompiler: {
